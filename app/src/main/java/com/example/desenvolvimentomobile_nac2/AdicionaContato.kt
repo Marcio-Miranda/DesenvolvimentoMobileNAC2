@@ -1,3 +1,10 @@
+/*
+Desenvolvimento Mobile - NAC2 - 5ECS
+RM 74409 - Ana Flavia Carneiro
+RM 74407 - Fabio Hellu
+RM 73769 - Marcio Miranda
+RM 75164 - Ricardo Rodrigues Silva
+ */
 package com.example.desenvolvimentomobile_nac2
 
 import android.app.Activity
