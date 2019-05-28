@@ -11,8 +11,13 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.ArrayAdapter
+import android.widget.ListView
+
 
 class MainActivity : AppCompatActivity() {
+
+    var array = arrayOf("Ana", "Fabio", "Marcio", "Ricardo")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,5 +27,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             };
         }
+        val adapter = ArrayAdapter(this, R.layout.listview_item, array)
+        val listView:ListView = findViewById(R.id.listview_1)
+        listView.setAdapter(adapter)
     }
 }
